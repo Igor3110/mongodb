@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'by.trofimov.mongodb'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.14'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+}
